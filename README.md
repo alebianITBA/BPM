@@ -18,6 +18,14 @@ Para poder ejecutar este trabajo practico es necesario:
 * BonitaBPM version 7.3.1
 * Ruby on Rails version 5.1.0 (opcional)
 
+## Procesos
+
+Los procesos creados son los siguientes:
+
+![](https://raw.githubusercontent.com/alebianitba/bpm/master/proceso1.png)
+
+![](https://raw.githubusercontent.com/alebianitba/bpm/master/proceso2.png)
+
 ## Ejecucion
 
 * Primero debe ejecutarse el [script SQL](./database_preparation.sql), esto creara la base de datos con todas las tablas y datos requeridos. Para hacerlo una posiblidad es ejecutar:
@@ -34,6 +42,7 @@ $ rails s
 
 * Luego importar el proyecto en BonitaBPM
 * Ejecutar el primer proceso llamado `Confirmar compras`
+* Cuando el proceso pregunte que archivo tomar en la entrada elegir el [path del archivo `new_purchases.csv`](./new_purchases.csv). El formato de dicho archivo es: checkout_id, client_id, product_id, price (centavos), card_number, card_provider.
 
 ### Resultado esperado
 
