@@ -44,9 +44,9 @@ GRANT ALL PRIVILEGES ON TABLE products TO alejandrobezdjian;
 
 CREATE TABLE purchases (
     id SERIAL PRIMARY KEY,
-    price INT,
-    product_id INT,
-    client_id INT,
+    price INT NOT NULL,
+    product_id INT NOT NULL,
+    client_id INT NOT NULL,
     FOREIGN KEY (product_id) REFERENCES products(id),
     FOREIGN KEY (client_id) REFERENCES clients(id)
 );
