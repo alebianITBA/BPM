@@ -47,6 +47,7 @@ CREATE TABLE purchases (
     price INT NOT NULL,
     product_id INT NOT NULL,
     client_id INT NOT NULL,
+    checkout_id INT,
     FOREIGN KEY (product_id) REFERENCES products(id),
     FOREIGN KEY (client_id) REFERENCES clients(id)
 );
